@@ -222,6 +222,49 @@ Upload your source code file here.
 :::
 ```
 
+### Image Support
+
+You can include images in your questions using standard Markdown syntax. The tool will automatically embed the image files into the QTI package.
+
+```markdown
+:::{.question type=multiple_choice points=1}
+Identify the structure in this diagram:
+
+![Cell Structure](images/cell-diagram.png)
+
+- [x] Mitochondria
+- [ ] Nucleus
+:::
+```
+
+> [!NOTE]
+> Ensure that the image path is relative to the `.qmd` file.
+> Providing **alt text** is highly recommended for accessibility. The tool will issue a warning if alt text is missing.
+
+### Code Fence Support
+
+Standard Markdown fenced code blocks are supported and will be automatically syntax-highlighted in the generated quiz. This is done using inline styles, ensuring compatibility with Brightspace and other LMS platforms that might strip external CSS.
+
+**Example:**
+
+````markdown
+:::{.question type=multiple_choice points=1}
+What does this Python code print?
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+```
+
+- [x] Hello, World!
+- [ ] Hello, name!
+:::
+````
+
+Supported languages include Rust, Python, Java, JavaScript, C++, and many others supported by the `syntect` crate.
+
 ### Math Support
 
 The tool supports LaTeX math expressions, which are automatically `brightspace-cli` converted to MathML for QTI compatibility.
