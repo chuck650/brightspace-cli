@@ -1,0 +1,19 @@
+---
+title: Math Quiz
+description: A quiz with math equations.
+shuffle_answers: true
+---
+
+:::{.question type=multiple_choice points=1}
+Solve for $x$: $x^2 - 4 = 0$
+
+- [x] $x = \pm 2$
+- [ ] $x = 4$
+- [ ] $x = 2$
+:::
+
+:::{.question type=short_answer points=1}
+What is the quadratic formula for $ax^2 + bx + c = 0$?
+
+- [x] $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+:::

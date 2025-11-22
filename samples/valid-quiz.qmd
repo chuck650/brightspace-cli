@@ -1,0 +1,12 @@
+---
+title: Test Quiz
+shuffle_answers: false
+---
+
+:::{.question type=multiple_choice points=1}
+What is 2+2?
+
+- [ ] 3
+- [x] 4
+- [ ] 5
+:::

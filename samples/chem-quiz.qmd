@@ -1,0 +1,25 @@
+---
+title: Chemistry Quiz
+description: A quiz with chemical formulas.
+shuffle_answers: true
+---
+
+:::{.question type=short_answer points=1}
+What is the formula for water?
+
+- [x] \ce{H2O}
+:::
+
+:::{.question type=multiple_choice points=1}
+Balance the equation: \ce{CH4 + 2O2 -> CO2 + 2H2O}
+
+- [x] Correct
+- [ ] Incorrect
+:::
+
+:::{.question type=multiple_choice points=1}
+Identify the ion: \ce{SO4^2-}
+
+- [x] Sulfate
+- [ ] Sulfite
+:::

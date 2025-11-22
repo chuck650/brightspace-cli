@@ -1,0 +1,35 @@
+[package]
+name = "brightspace-cli"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "A CLI for interacting with the Brightspace API"
+repository = "https://github.com/user/brightspace-cli"
+
+[package.metadata.generate-rpm]
+assets = [
+    { source = "target/release/brightspace-cli", dest = "/usr/bin/brightspace-cli", mode = "755" }
+]
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+tokio = { version = "1.37.0", features = ["full"] }
+reqwest = { version = "0.12.4", features = ["json"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+anyhow = "1.0.86"
+futures = "0.3.30"
+dirs = "5.0.1"
+serde_yaml = "0.9.34"
+config = { version = "0.14.0", features = ["yaml"] }
+keyring = "2.3.2"
+rpassword = "7.3"
+oauth2 = { version = "4.4.2", features = ["reqwest"] }
+url = "2.5.0"
+which = "4.4.0"
+zip = "0.6"
+quick-xml = { version = "0.31", features = ["serialize"] }
+uuid = { version = "1.4", features = ["v4"] }
+latex2mathml = "0.2.3"
+regex = "1.12.2"
+syntect = "5.3.0"

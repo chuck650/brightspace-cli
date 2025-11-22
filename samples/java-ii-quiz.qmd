@@ -1,0 +1,69 @@
+---
+title: Java II Programming Concepts
+description: A quiz covering intermediate Java topics like OOP, collections, and exceptions.
+shuffle_answers: true
+---
+
+:::{.question type=multiple_choice points=1}
+Which statement is true about abstract classes in Java?
+
+- [ ] An abstract class can be instantiated directly.
+- [x] An abstract class can have both abstract and non-abstract methods.
+- [ ] All methods in an abstract class must be abstract.
+- [ ] An abstract class cannot have a constructor.
+:::
+
+:::{.question type=multiple_answers points=2}
+Which of the following collections in Java do not allow duplicate elements? (Select all that apply)
+
+- [x] Set
+- [ ] List
+- [x] HashSet
+- [ ] ArrayList
+:::
+
+:::{.question type=true_false points=1}
+In Java, a class can inherit from multiple parent classes (multiple inheritance).
+
+- [ ] True
+- [x] False
+:::
+
+:::{.question type=short_answer points=1}
+What keyword is used to manually throw an exception in Java?
+
+- [x] throw
+:::
+
+:::{.question type=essay points=5}
+Explain the concept of polymorphism in object-oriented programming. Provide a simple Java code example that demonstrates polymorphism using a superclass and at least two subclasses.
+:::
+
+:::{.question type=multiple_choice points=1}
+What is the primary purpose of Generics in Java?
+
+- [ ] To improve the performance of collection lookups.
+- [ ] To allow classes to inherit from multiple interfaces.
+- [x] To provide type-safety for collections and classes at compile-time.
+- [ ] To automatically generate getter and setter methods.
+:::
+
+:::{.question type=short_answer points=1}
+What interface must an object implement to be used as a key in a HashMap?
+
+- [x] hashCode
+- [x] equals
+:::
+
+:::{.question type=multiple_answers points=2}
+What is the effect of using the `final` keyword in Java? (Select all that apply)
+
+- [x] When applied to a variable, it makes it a constant (cannot be reassigned).
+- [ ] When applied to a a method, it can still be overridden by a subclass.
+- [x] When applied to a class, it prevents the class from being subclassed.
+- [x] When applied to a method, it prevents it from being overridden.
+:::
+
+:::{.question type=file_upload points=5}
+Run the command `ls -l | tee listing.txt` in your terminal and upload the resulting `listing.txt` file.
+:::

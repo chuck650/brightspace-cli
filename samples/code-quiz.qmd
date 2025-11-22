@@ -1,0 +1,49 @@
+---
+title: Code Quiz
+description: A quiz with syntax highlighted code.
+shuffle_answers: true
+---
+
+:::{.question type=multiple_choice points=1}
+What does this Rust code print?
+
+```rust
+fn main() {
+    let x = 5;
+    println!("x is {}", x);
+}
+```
+
+- [x] x is 5
+- [ ] x is x
+:::
+
+:::{.question type=multiple_choice points=1}
+What is the output of this Python snippet?
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("World"))
+```
+
+- [x] Hello, World!
+- [ ] Hello, name!
+:::
+
+:::{.question type=multiple_choice points=1}
+Identify the missing keyword in this Java code:
+
+```java
+public _____ HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
+}
+```
+
+- [x] class
+- [ ] void
+- [ ] static
+:::

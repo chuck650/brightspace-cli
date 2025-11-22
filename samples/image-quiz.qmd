@@ -1,0 +1,23 @@
+---
+title: Image Quiz
+description: A quiz with images.
+shuffle_answers: true
+---
+
+:::{.question type=multiple_choice points=1}
+What language is this logo for?
+
+![Rust Logo](rust-logo.png)
+
+- [x] Rust
+- [ ] Go
+- [ ] C++
+:::
+
+:::{.question type=multiple_choice points=1}
+Identify this missing alt text image:
+
+![](rust-logo.png)
+
+- [x] It's Rust
+:::

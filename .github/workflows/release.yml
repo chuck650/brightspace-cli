@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-rpm:
+    name: Build RPM (x86_64)
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Install cargo-generate-rpm
+        run: cargo install cargo-generate-rpm
+
+      - name: Build Release Binary
+        run: cargo build --release
+
+      - name: Generate RPM
+        run: cargo generate-rpm
+
+      - name: Prepare Release Artifacts
+        run: |
+          mkdir -p releases/${{ github.ref_name }}
+          mv target/generate-rpm/*.rpm releases/${{ github.ref_name }}/
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: releases/${{ github.ref_name }}/*.rpm
+          draft: false
+          prerelease: false
+          generate_release_notes: true

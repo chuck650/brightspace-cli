@@ -1,0 +1,20 @@
+---
+title: Rust Basics Quiz
+description: A quiz about Rust programming language basics.
+shuffle_answers: true
+---
+
+:::{.question type=multiple_choice points=1}
+What is the ownership rule in Rust?
+
+- [ ] A value can have multiple owners.
+- [x] A value can have only one owner at a time.
+- [ ] When the owner goes out of scope, the value is kept.
+:::
+
+:::{.question type=true_false points=1}
+Variables in Rust are mutable by default.
+
+- [ ] True
+- [x] False
+:::
