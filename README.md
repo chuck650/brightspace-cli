@@ -76,8 +76,7 @@ To get help with any command or subcommand, you can use the `help` command or th
 ```bash
 brightspace-cli help
 brightspace-cli --help
-brightspace-cli configbrightspace-cli --help
-brightspace-cli helpbrightspace-cli config
+brightspace-cli config
 ```
 
 ### Authentication
@@ -102,7 +101,7 @@ brightspace-cli auth logout
 
 ### Commands
 
-####brightspace-cli whoami
+#### whoami
 
 The `whoami` command fetches and displays information about the current user using the stored access token.
 
